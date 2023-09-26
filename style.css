@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,500;0,600;1,100;1,400&display=swap');
+
+*{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+:root{
+    --main-color: #68d4d4;
+    --second-color: #c4e45a;
+    --black-color: #000000;
+    --border: 0.1rem solid rgba(219, 194, 194, 0.4) ;
+}
+
+/*! base html codes*/
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--main-color);
+    
+}
+
+section{
+    padding-bottom: 15rem;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 17px;
+    color: white;
+    background-color: black;
+
+
+}
+
+
+/*! Header Start */
+.header .logo img { 
+    height: 9rem;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgb(14, 14, 14);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+}
+
+.header .navbar .active,
+.header .navbar a:hover {
+    border-color: var(--black-color);
+    padding-bottom: 0.5rem;
+
+}
+
+.header .buttons button{
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+/*! Header End */
+
+/*! Home Start */
+.Home {
+    min-height: 100vh;
+    background: url(https://images.unsplash.com/photo-1549216963-72c1712c1196?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJvYWQlMjBiaWtlfGVufDB8fDB8fHww&w=1000&q=80) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    margin-top: -130px;
+    display: flex;
+    align-items: center;
+}   
+
+.Home .content {
+    max-width: 60rem;
+    
+
+}
+
+.Home .content h3{
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    
+}
+
+.Home .content p{
+    font-size: 2.1rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: rgb(0, 0, 0);
+    text-shadow: 5px;
+    
+}
+
+/*! Home End */
